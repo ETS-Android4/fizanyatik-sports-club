@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ui_accent1">@android:color/system_accent1_100</color>
+    <color name="ui_accent2">@android:color/system_accent1_200</color>
+    <color name="ui_accent3">@android:color/system_accent1_500</color>
+    <color name="prePrimary">@android:color/system_accent1_100</color>
+    <color name="colorPrimary">@android:color/system_accent1_200</color>
+    <color name="postPrimary">@android:color/system_accent1_500</color>
+
+    <color name="gambhir_light">@android:color/system_accent2_50</color>
+    <color name="gambhir_dark">@android:color/system_accent1_600</color>
+
+</resources>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_light"
+    tools:context=".MatchFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/back_light"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/add_match"
+                    android:visibility="gone"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_background"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_horizontal"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageview19"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_baseline_add_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/more_btn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/back_light" />
+
+                        <TextView
+                            android:id="@+id/more_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gsm"
+                            android:text="Add a Match"
+                            android:textColor="@color/back_dark"
+                            android:textSize="18sp"
+                            app:flow_horizontalBias="0"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/imageview19"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/matchrecyclerview"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80dp"
+                    android:background="#00ffffff"/>
+
+                <xyz.peridy.shimmerlayout.ShimmerLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shimmer_match">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="60dp"
+                    android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/constraintLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="222dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/chat_dark"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/team1_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/circle_skeleton"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/back_light"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/team1_name"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/team1_img"
+                    app:layout_constraintStart_toStartOf="@+id/team1_img"
+                    app:layout_constraintTop_toBottomOf="@+id/team1_img" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/score1_layout"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/team1_img"
+                    app:layout_constraintStart_toStartOf="@+id/team1_img"
+                    app:layout_constraintTop_toBottomOf="@+id/team1_name">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="95dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/team1_score"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="8dp"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/team2_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/circle_skeleton"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/back_light"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/team2_name"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/team2_img"
+                    app:layout_constraintStart_toStartOf="@+id/team2_img"
+                    app:layout_constraintTop_toBottomOf="@+id/team2_img" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/score2_layout"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/team2_img"
+                    app:layout_constraintStart_toStartOf="@+id/team2_img"
+                    app:layout_constraintTop_toBottomOf="@+id/team2_name">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="95dp"
+                        android:layout_height="22dp"
+                        android:id="@+id/team2_score"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="8dp"
+
+                        />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/textView2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="50dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/chat_dark"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/match_result"
+                    android:layout_width="250dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="16dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/back_light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/score1_layout" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/more_btn1"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="200dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="@+id/team2_img"
+                        app:layout_constraintStart_toStartOf="@+id/team1_img"
+                        app:layout_constraintTop_toBottomOf="@+id/match_result" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/constraintLayout50"
+                        android:layout_width="match_parent"
+                        android:layout_height="222dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="66dp"
+                        android:layout_marginRight="8dp"
+                        app:cardBackgroundColor="@color/chat_dark"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout5" />
+
+                    <ImageView
+                        android:id="@+id/team1_img0"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/circle_skeleton"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="308dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="8dp"
+                        android:id="@+id/team1_name0"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="@+id/team1_img0"
+                        app:layout_constraintStart_toStartOf="@+id/team1_img0"
+                        app:layout_constraintTop_toBottomOf="@+id/team1_img0" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/score1_layout0"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@+id/team1_img0"
+                        app:layout_constraintStart_toStartOf="@+id/team1_img0"
+                        app:layout_constraintTop_toBottomOf="@+id/team1_name0">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="95dp"
+                            android:layout_height="22dp"
+                            android:id="@+id/team1_score0"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@color/back_light"
+                            app:cardCornerRadius="8dp"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/team2_img0"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/circle_skeleton"
+                        android:layout_marginTop="308dp"
+                        android:layout_marginRight="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="8dp"
+                        android:id="@+id/team2_name0"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="@+id/team2_img0"
+                        app:layout_constraintStart_toStartOf="@+id/team2_img0"
+                        app:layout_constraintTop_toBottomOf="@+id/team2_img0" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/score2_layout0"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@+id/team2_img0"
+                        app:layout_constraintStart_toStartOf="@+id/team2_img0"
+                        app:layout_constraintTop_toBottomOf="@+id/team2_name0">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="95dp"
+                            android:layout_height="22dp"
+                            android:id="@+id/team2_score0"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@color/back_light"
+                            app:cardCornerRadius="8dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/textView20"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="50dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/chat_dark"
+                        app:cardCornerRadius="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout50" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/match_result0"
+                        android:layout_width="250dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="16dp"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/score1_layout0" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/more_btn10"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="200dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="@+id/team2_img0"
+                        app:layout_constraintStart_toStartOf="@+id/team1_img0"
+                        app:layout_constraintTop_toBottomOf="@+id/match_result0" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/constraintLayout500"
+                        android:layout_width="match_parent"
+                        android:layout_height="222dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="66dp"
+                        android:layout_marginRight="8dp"
+                        app:cardBackgroundColor="@color/chat_dark"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout50" />
+
+                    <ImageView
+                        android:id="@+id/team1_img00"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/circle_skeleton"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="594dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="8dp"
+                        android:id="@+id/team1_name00"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="@+id/team1_img00"
+                        app:layout_constraintStart_toStartOf="@+id/team1_img00"
+                        app:layout_constraintTop_toBottomOf="@+id/team1_img00" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/score1_layout00"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@+id/team1_img0"
+                        app:layout_constraintStart_toStartOf="@+id/team1_img00"
+                        app:layout_constraintTop_toBottomOf="@+id/team1_name00">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="95dp"
+                            android:layout_height="22dp"
+                            android:id="@+id/team1_score00"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@color/back_light"
+                            app:cardCornerRadius="8dp"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/team2_img00"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/circle_skeleton"
+                        android:layout_marginTop="594dp"
+                        android:layout_marginRight="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="8dp"
+                        android:id="@+id/team2_name00"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="@+id/team2_img00"
+                        app:layout_constraintStart_toStartOf="@+id/team2_img00"
+                        app:layout_constraintTop_toBottomOf="@+id/team2_img00" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/score2_layout00"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="@+id/team2_img00"
+                        app:layout_constraintStart_toStartOf="@+id/team2_img00"
+                        app:layout_constraintTop_toBottomOf="@+id/team2_name00">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="95dp"
+                            android:layout_height="22dp"
+                            android:id="@+id/team2_score00"
+                            app:cardElevation="0dp"
+                            app:cardBackgroundColor="@color/back_light"
+                            app:cardCornerRadius="8dp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/textView200"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="50dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/chat_dark"
+                        app:cardCornerRadius="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout5" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/match_result00"
+                        android:layout_width="250dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="16dp"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/score1_layout00" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/more_btn100"
+                        android:layout_width="0dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        app:cardBackgroundColor="@color/back_light"
+                        app:cardCornerRadius="200dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="@+id/team2_img00"
+                        app:layout_constraintStart_toStartOf="@+id/team1_img00"
+                        app:layout_constraintTop_toBottomOf="@+id/match_result00" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                </xyz.peridy.shimmerlayout.ShimmerLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+</FrameLayout>

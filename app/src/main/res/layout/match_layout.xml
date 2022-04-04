@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/match_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/team1_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gsb"
+        android:id="@+id/team1_name"
+        android:textColor="@color/ui_accent3"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/team1_img"
+        app:layout_constraintStart_toStartOf="@+id/team1_img"
+        app:layout_constraintTop_toBottomOf="@+id/team1_img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:id="@+id/score1_layout"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/team1_img"
+        app:layout_constraintStart_toStartOf="@+id/team1_img"
+        app:layout_constraintTop_toBottomOf="@+id/team1_name">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/team1_score"
+        android:textColor="@color/text_main"
+        android:textSize="18sp"
+        android:layout_marginRight="8dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/team1_over"
+            android:textColor="@color/text_sec"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/team2_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gsb"
+        android:id="@+id/team2_name"
+        android:textColor="@color/ui_accent3"
+        android:textSize="25sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/team2_img"
+        app:layout_constraintStart_toStartOf="@+id/team2_img"
+        app:layout_constraintTop_toBottomOf="@+id/team2_img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:id="@+id/score2_layout"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/team2_img"
+        app:layout_constraintStart_toStartOf="@+id/team2_img"
+        app:layout_constraintTop_toBottomOf="@+id/team2_name">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/team2_score"
+            android:textColor="@color/text_main"
+            android:textSize="18sp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/team2_over"
+            android:textColor="@color/text_sec"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/gsb"
+        android:text="V"
+        android:textColor="@color/ui_accent3"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/match_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="@color/ui_accent3"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score1_layout" />
+
+    <TextView
+        android:id="@+id/more_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/gsm"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="Full Scorecard"
+        android:textColor="@color/back_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/team2_img"
+        app:layout_constraintStart_toStartOf="@+id/team1_img"
+        app:layout_constraintTop_toBottomOf="@+id/match_result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

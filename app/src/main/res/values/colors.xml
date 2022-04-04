@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="prePrimary">#D8E2FF</color>
+    <color name="colorPrimary">#AFC6FF</color>
+    <color name="postPrimary">#5A75B2</color>
+    <color name="ui_accent1">#D8E2FF</color>
+    <color name="ui_accent2">#AFC6FF</color>
+    <color name="ui_accent3">#5A75B2</color>
+    <color name="text_main">#E6000000</color>
+    <color name="text_sec">#9A000000</color>
+    <color name="back_light">#fff</color>
+    <color name="divider">#e0e0e0</color>
+    <color name="navigation">#FFFFFF</color>
+    <color name="btn_some">#1296D5</color>
+    <color name="trans">#00000000</color>
+    <color name="back_dark">#FFFFFF</color>
+    <color name="chat_dark">#E0E0E0</color>
+    <color name="back_pro">#80000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#4D5057</color>
+    <color name="green">#4FC18A</color>
+    <color name="black_shade">#333333</color>
+
+    <color name="splash1">#51d1ee</color>
+    <color name="splash2">#2898d4</color>
+    <color name="splash3">#005eb9</color>
+
+    <color name="APXI_light">#cae6ff</color>
+    <color name="APXI_dark">#397baa</color>
+    <color name="PSXI_light">#c6ef9f</color>
+    <color name="PSXI_dark">#5c803c</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+
+    <color name="gambhir_light">#f6ecff</color>
+    <color name="gambhir_dark">#7f6baf</color>
+</resources>

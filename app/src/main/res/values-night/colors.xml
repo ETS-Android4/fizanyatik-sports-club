@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="prePrimary">#20313d</color>
+    <color name="colorPrimary">#4d606c</color>
+    <color name="postPrimary">#7d92a1</color>
+    <color name="ui_accent1">#20313d</color>
+    <color name="ui_accent2">#4d606c</color>
+    <color name="ui_accent3">#7d92a1</color>
+    <color name="text_main">#E6ffffff</color>
+    <color name="text_sec">#9AFFFFFF</color>
+    <color name="back_light">#000000</color>
+    <color name="divider">#1f1f1f</color>
+    <color name="back_dark">#FF2E2E2E</color>
+    <color name="chat_dark">#FF2E2E2E</color>
+    <color name="trans">#00000000</color>
+    <color name="navigation">#656565</color>
+    <color name="btn_some">#FF2E2E2E</color>
+    <color name="back_pro">#80FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#4D5057</color>
+    <color name="green">#4FC18A</color>
+    <color name="black_shade">#333333</color>
+
+    <color name="APXI_light">#22323f</color>
+    <color name="APXI_dark">#8292a2</color>
+    <color name="PSXI_light">#29341f</color>
+    <color name="PSXI_dark">#88957a</color>
+
+    <color name="gambhir_light">#f6ecff</color>
+    <color name="gambhir_dark">#7f6baf</color>
+
+</resources>

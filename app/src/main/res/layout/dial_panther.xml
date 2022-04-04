@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.FizanyatikSportsClub.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:padding="16dp"
+    android:id="@+id/rel_ashwin"
+    android:gravity="center"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/dial_purple"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:id="@+id/image_ashwin"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/widget_blackpanther" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/image_ashwin"
+            android:gravity="center">
+
+            <TextClock
+                android:id="@+id/time_ashwin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:format12Hour="h:mm"
+                android:gravity="center_horizontal"
+                android:text="11:00"
+                android:textColor="#7f6baf"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_ashwin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_ashwin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/hash_purple"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="12dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="#WakandaForever"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

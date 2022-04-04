@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_light">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/welcome_lottie"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="12dp">
+
+    <com.ritesh.ratiolayout.RatioLinearLayout
+        android:id="@+id/ratioLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fixed_attribute="WIDTH"
+        app:horizontal_ratio="1405"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:vertical_ratio="358">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fsc_poster" />
+
+    </com.ritesh.ratiolayout.RatioLinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emaillog_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Email Address"
+        app:hintTextColor="@color/ui_accent3"
+        app:placeholderTextColor="@color/ui_accent3"
+        android:textColorHint="@color/text_sec"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/emaillog"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_sec"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:id="@+id/passwordlog_parent"
+        android:layout_marginEnd="20dp"
+        android:textColorHint="@color/text_sec"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+        app:hintTextColor="@color/ui_accent3"
+        app:placeholderTextColor="@color/ui_accent3"
+        app:passwordToggleTint="@color/ui_accent3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/passwordlog"
+            android:textColor="@color/text_main"
+            android:textColorHint="@color/text_sec"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/gsr"
+        android:gravity="end"
+        android:text="Forgot Password?"
+        android:textColor="@color/ui_accent3"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_background"
+        android:clickable="true"
+        android:fontFamily="@font/gsb"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Login"
+        android:textColor="@color/back_light"
+        android:textSize="28sp" />
+
+</LinearLayout>
