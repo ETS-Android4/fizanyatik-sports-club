@@ -25,6 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:autoLink="all"
+            android:textColorLink="@color/ui_accent1"
             android:foregroundGravity="right"
             android:gravity="right"
             android:padding="8dp"

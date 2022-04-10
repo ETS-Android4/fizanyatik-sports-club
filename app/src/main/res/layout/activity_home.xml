@@ -64,6 +64,8 @@
         style="@style/Widget.App.BottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemRippleColor="@color/ui_accent2"
         android:layout_gravity="bottom"
         app:itemTextAppearanceActive="@color/back_light"
         app:itemBackground="@color/ui_accent1"

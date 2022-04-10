@@ -27,7 +27,19 @@
     <color name="PSXI_light">#29341f</color>
     <color name="PSXI_dark">#88957a</color>
 
-    <color name="gambhir_light">#f6ecff</color>
-    <color name="gambhir_dark">#7f6baf</color>
+    <color name="purple_light">#312e42</color>
+    <color name="purple_dark">#e6deff</color>
+    <color name="pink_light">#43292e</color>
+    <color name="pink_dark">#ffd9df</color>
+    <color name="red_light">#442a26</color>
+    <color name="red_dark">#ffdad3</color>
+    <color name="yellow_light">#3b2f15</color>
+    <color name="yellow_dark">#ffde9e</color>
+    <color name="blue_light">#263140</color>
+    <color name="blue_dark">#d2e4ff</color>
+    <color name="teal_light">#1c3530</color>
+    <color name="teal_dark">#92f4e3</color>
+    <color name="green_light">#2a331e</color>
+    <color name="green_dark">#c9ef9c</color>
 
 </resources>

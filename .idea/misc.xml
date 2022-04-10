@@ -9,16 +9,29 @@
         <entry key="..\:/Users/Aryan Srivastava/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_message.xml" value="0.1" />
         <entry key="..\:/Users/Aryan Srivastava/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_on_boarding.xml" value="0.22" />
         <entry key="..\:/Users/Aryan Srivastava/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-v21/app_widget_background.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-v24/bottom_back.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-v24/button_background.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-v24/login_curve.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/background_left.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/background_right.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/button_bg.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/circle_profile.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/edittext_bg.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/edttextround.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/ic_arrow_back_white_24dp.xml" value="0.20974358974358975" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/ic_chevron_right.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/ic_edit.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/ic_forgot_password.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/ic_outline_cancel_24.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/ic_picture.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/ic_plus.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/ic_round_done_24.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/rounded_dialog.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/rounded_edittext.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/search_bg.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable-xxhdpi/stories_back.xml" value="0.21302083333333333" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable/bottom_nav_color.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable/captain_back.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable/captain_back_psxi.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable/circle_skeleton.xml" value="0.21302083333333333" />
@@ -53,7 +66,7 @@
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/drawable/teams_gradient.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_add_match.xml" value="0.22" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_apxi.xml" value="0.22" />
-        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_aryan_srivastava.xml" value="0.22" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_aryan_srivastava.xml" value="0.2" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_chat.xml" value="0.196875" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_group.xml" value="0.22" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_home.xml" value="0.22" />
@@ -61,11 +74,13 @@
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_login.xml" value="0.196875" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_main.xml" value="0.196875" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_message.xml" value="0.22" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_north_super.xml" value="0.22" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_one_feed_text.xml" value="0.196875" />
-        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_pranjal_singh.xml" value="0.196875" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_pranjal_singh.xml" value="0.13" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_prateek_sinha.xml" value="0.22" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_psxi.xml" value="0.25" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_shikhar_sinha.xml" value="0.1828125" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_south_brave.xml" value="0.15" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/activity_view_profile.xml" value="0.196875" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/chat_item_left.xml" value="0.196875" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/chat_item_right.xml" value="0.196875" />
@@ -87,8 +102,8 @@
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/feed_text_layout.xml" value="0.196875" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_chat.xml" value="0.196875" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_chats.xml" value="0.33" />
-        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_feeds.xml" value="0.22" />
-        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_feeds.xml" value="0.25" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_home.xml" value="0.226890756302521" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_match.xml" value="0.22" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_profile.xml" value="0.196875" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/FizanyatikSportsClub/app/src/main/res/layout/fragment_users.xml" value="0.196875" />

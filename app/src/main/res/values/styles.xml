@@ -62,12 +62,12 @@
     </style>
 
     <style name="APXI" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimaryDark">@color/APXI_light</item>
+        <item name="colorPrimaryDark">#2f0353</item>
         <item name="android:navigationBarColor">@color/back_light</item>
     </style>
 
     <style name="PSXI" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimaryDark">@color/PSXI_light</item>
+        <item name="colorPrimaryDark">#c4de53</item>
         <item name="android:navigationBarColor">@color/back_light</item>
     </style>
 
@@ -89,6 +89,7 @@
 
     <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+        <item name="colorPrimary">@color/ui_accent1</item>
     </style>
 
     <style name="ThemeOverlay.App.BottomNavigationView" parent="">

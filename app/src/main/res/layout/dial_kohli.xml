@@ -38,7 +38,7 @@
                 android:format12Hour="h:mm"
                 android:gravity="center_horizontal"
                 android:text="11:00"
-                android:textColor="#5d803d"
+                android:textColor="@color/green_dark"
                 android:textSize="70sp"
                 android:textStyle="bold" />
 
@@ -55,7 +55,7 @@
                 android:paddingTop="2dp"
                 android:paddingBottom="2dp"
                 android:text="#KingKohli"
-                android:textColor="#fff"
+                android:textColor="@color/green_light"
                 android:textSize="14sp"
                 android:textStyle="italic" />
 

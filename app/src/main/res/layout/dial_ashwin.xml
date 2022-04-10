@@ -38,7 +38,7 @@
                 android:format12Hour="h:mm"
                 android:gravity="center_horizontal"
                 android:text="11:00"
-                android:textColor="#3d7baa"
+                android:textColor="@color/blue_dark"
                 android:textSize="70sp"
                 android:textStyle="bold" />
 
@@ -47,17 +47,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/time_ashwin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
                 android:background="@drawable/hash_blue"
+                android:gravity="center_horizontal"
                 android:paddingHorizontal="12dp"
                 android:paddingTop="2dp"
                 android:paddingBottom="2dp"
-                android:textStyle="italic"
                 android:text="#ComeOnAsh"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="1dp"
-                android:gravity="center_horizontal"
-                android:textColor="#fff"
-                android:textSize="14sp" />
+                android:textColor="@color/blue_light"
+                android:textSize="14sp"
+                android:textStyle="italic" />
 
         </RelativeLayout>
 

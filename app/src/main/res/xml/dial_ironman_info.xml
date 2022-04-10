@@ -2,7 +2,7 @@
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
     android:initialKeyguardLayout="@layout/dial_ironman"
     android:initialLayout="@layout/dial_ironman"
-    android:previewImage="@drawable/preview_iroman"
+    android:previewImage="@drawable/preview_ironman"
     android:previewLayout="@layout/dial_ironman"
     android:resizeMode="horizontal|vertical"
     android:targetCellWidth="5"
