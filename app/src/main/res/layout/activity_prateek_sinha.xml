@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,11 +7,93 @@
     android:layout_height="match_parent"
     tools:context=".PrateekSinha">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2f0353"
+            android:fitsSystemWindows="true"
+            app:contentScrim="#2f0353"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <com.ritesh.ratiolayout.RatioLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fixed_attribute="WIDTH"
+                app:horizontal_ratio="16"
+                app:layout_collapseMode="parallax"
+                app:vertical_ratio="9">
+
+                <ImageView
+                    android:id="@+id/iamgeonefeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prateek"
+                    android:layout_gravity="center_vertical"
+                    app:layout_collapseMode="parallax" />
+
+            </com.ritesh.ratiolayout.RatioLinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/back_pr"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_back_white_24dp"
+                    app:tint="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prateek Sinha"
+                    android:fontFamily="@font/gsb"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:paddingLeft="12dp"/>
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/captain_back"
+                    android:fontFamily="@font/gsm"
+                    android:text="C"
+                    android:gravity="center"
+                    android:layout_gravity="right|center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -30,6 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
+                    android:paddingHorizontal="4dp"
                     android:orientation="horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -39,9 +122,9 @@
                         android:id="@+id/players2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="@color/APXI_dark"
+                        app:cardBackgroundColor="#2f0353"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/runs"
@@ -62,7 +145,7 @@
                                 android:fontFamily="@font/gsb"
                                 android:gravity="center"
                                 android:text="150.3"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="30sp" />
 
                             <TextView
@@ -70,7 +153,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/gsb"
                                 android:text="Strike Rate"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="17sp" />
 
                         </LinearLayout>
@@ -81,9 +164,9 @@
                         android:id="@+id/runs"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="@color/APXI_dark"
+                        app:cardBackgroundColor="#2f0353"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/wickets"
@@ -104,7 +187,7 @@
                                 android:fontFamily="@font/gsb"
                                 android:gravity="center"
                                 android:text="7.88"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="30sp" />
 
                             <TextView
@@ -112,7 +195,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/gsb"
                                 android:text="Economy"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="17sp" />
 
                         </LinearLayout>
@@ -123,9 +206,9 @@
                         android:id="@+id/wickets"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="@color/APXI_dark"
+                        app:cardBackgroundColor="#2f0353"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -146,7 +229,7 @@
                                 android:fontFamily="@font/gsb"
                                 android:gravity="center"
                                 android:text="217*"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="30sp" />
 
                             <TextView
@@ -154,7 +237,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/gsb"
                                 android:text="High Score"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="17sp" />
 
                         </LinearLayout>
@@ -168,6 +251,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
+                    android:paddingHorizontal="4dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="16dp"
                     android:orientation="horizontal"
@@ -179,9 +263,9 @@
                         android:id="@+id/wins"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="@color/APXI_dark"
+                        app:cardBackgroundColor="#2f0353"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/loss"
@@ -202,7 +286,7 @@
                                 android:fontFamily="@font/gsb"
                                 android:gravity="center"
                                 android:text="460*"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="30sp" />
 
                             <TextView
@@ -210,7 +294,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/gsb"
                                 android:text="Matches"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="17sp" />
 
                         </LinearLayout>
@@ -221,9 +305,9 @@
                         android:id="@+id/loss"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="@color/APXI_dark"
+                        app:cardBackgroundColor="#2f0353"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/players"
@@ -244,7 +328,7 @@
                                 android:fontFamily="@font/gsb"
                                 android:gravity="center"
                                 android:text="10745"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="30sp" />
 
                             <TextView
@@ -252,7 +336,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/gsb"
                                 android:text="Runs"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="17sp" />
 
                         </LinearLayout>
@@ -263,9 +347,9 @@
                         android:id="@+id/players"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
+                        android:layout_margin="4dp"
                         android:elevation="12dp"
-                        app:cardBackgroundColor="@color/APXI_dark"
+                        app:cardBackgroundColor="#2f0353"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -286,7 +370,7 @@
                                 android:fontFamily="@font/gsb"
                                 android:gravity="center"
                                 android:text="605"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="30sp" />
 
                             <TextView
@@ -294,7 +378,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/gsb"
                                 android:text="Wickets"
-                                android:textColor="@color/APXI_light"
+                                android:textColor="#fff"
                                 android:textSize="17sp" />
 
                         </LinearLayout>
@@ -302,92 +386,6 @@
                     </androidx.cardview.widget.CardView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/fizantoground2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:background="@drawable/teams_gradient"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_margin="10dp"
-                    android:id="@+id/back_pr"
-                    app:tint="@color/text_main"
-                    android:src="@drawable/ic_arrow_back_white_24dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
-                    android:transitionName="prateek"
-                    android:id="@+id/imageView2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:src="@drawable/prateek"
-                        android:id="@+id/prateek_photo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:background="@drawable/captain_back"
-                        android:gravity="center"
-                        android:text="C"
-                        android:layout_margin="8dp"
-                        android:textColor="@color/APXI_light"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/gsb"
-                    android:text="Prateek Sinha"
-                    android:textColor="@color/APXI_dark"
-                    android:textSize="25dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bating All-Rounder"
-                    android:textColor="@color/text_sec"
-                    android:textSize="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -412,7 +410,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gsb"
                             android:text="Personal Information"
-                            android:textColor="@color/APXI_dark"
+                            android:textColor="@color/text_main"
                             android:textSize="17sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -581,7 +579,7 @@
                             android:layout_marginTop="12dp"
                             android:fontFamily="@font/gsb"
                             android:text="GSC Awards 2019"
-                            android:textColor="@color/APXI_dark"
+                            android:textColor="@color/text_main"
                             android:textSize="17sp" />
 
 
@@ -623,7 +621,7 @@
                     app:cardCornerRadius="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2">
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -635,7 +633,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gsb"
                             android:text="FSC Awards 2020"
-                            android:textColor="@color/APXI_dark"
+                            android:textColor="@color/text_main"
                             android:textSize="17sp"
                             android:layout_marginLeft="12dp"
                             android:layout_marginTop="12dp"/>
@@ -674,4 +672,4 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -46,6 +46,13 @@
             app:layout_collapseMode="pin"
             android:id="@+id/toolbar">
 
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/back_btn_onefeedtext"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                app:tint="@color/text_main"/>
+
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.CollapsingToolbarLayout>

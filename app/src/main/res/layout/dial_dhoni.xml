@@ -38,7 +38,7 @@
                 android:format12Hour="h:mm"
                 android:gravity="center_horizontal"
                 android:text="11:00"
-                android:textColor="#84751c"
+                android:textColor="@color/yellow_dark"
                 android:textSize="70sp"
                 android:textStyle="bold" />
 
@@ -55,7 +55,7 @@
                 android:paddingTop="2dp"
                 android:paddingBottom="2dp"
                 android:text="#CaptainCool"
-                android:textColor="#fff"
+                android:textColor="@color/yellow_light"
                 android:textSize="14sp"
                 android:textStyle="italic" />
 

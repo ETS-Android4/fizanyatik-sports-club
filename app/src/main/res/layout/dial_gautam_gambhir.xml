@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:background="@drawable/dial_you"
+        android:background="@drawable/dial_purple"
         android:orientation="horizontal">
 
         <ImageView
@@ -38,7 +38,7 @@
                 android:format12Hour="h:mm"
                 android:gravity="center_horizontal"
                 android:text="11:00"
-                android:textColor="@color/gambhir_dark"
+                android:textColor="@color/purple_dark"
                 android:textSize="70sp"
                 android:textStyle="bold" />
 
@@ -49,13 +49,13 @@
                 android:layout_below="@id/time_ashwin"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="1dp"
-                android:background="@drawable/hash_you"
+                android:background="@drawable/hash_purple"
                 android:gravity="center_horizontal"
                 android:paddingHorizontal="12dp"
                 android:paddingTop="2dp"
                 android:paddingBottom="2dp"
                 android:text="#TheDoubleG"
-                android:textColor="@color/ui_accent1"
+                android:textColor="@color/purple_light"
                 android:textSize="14sp"
                 android:textStyle="italic" />
 

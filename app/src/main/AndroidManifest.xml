@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.sportsclub.fizanyatik">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -25,19 +24,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label,android:theme">
-
-        <receiver
-            android:name=".DialAlPaCHino"
-            android:exported="true"
-            android:label="Al Pa Chino">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/dial_al_pa_c_hino_info" />
-        </receiver>
+        <activity
+            android:name=".SouthBrave"
+            android:exported="false"
+            android:theme="@style/PSXI"/>
+        <activity
+            android:name=".NorthSuper"
+            android:exported="false"
+            android:theme="@style/APXI" />
         <receiver
             android:name=".DialDhoni"
             android:exported="true"
@@ -63,18 +57,6 @@
                 android:resource="@xml/dial_messi_info" />
         </receiver>
         <receiver
-            android:name=".DialRonaldo"
-            android:exported="true"
-            android:label="Christiano Ronaldo">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/dial_ronaldo_info" />
-        </receiver>
-        <receiver
             android:name=".DialGautamGambhir"
             android:exported="true"
             android:label="Gautam Gambhir">
@@ -97,42 +79,6 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/dial_ironman_info" />
-        </receiver>
-        <receiver
-            android:name=".DialSpider"
-            android:exported="true"
-            android:label="Spiderman">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/dial_spider_info" />
-        </receiver>
-        <receiver
-            android:name=".DialPanther"
-            android:exported="true"
-            android:label="Black Panther">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/dial_panther_info" />
-        </receiver>
-        <receiver
-            android:name=".DialFederer"
-            android:exported="true"
-            android:label="Rodger Federer">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/dial_federer_info" />
         </receiver>
         <receiver
             android:name=".DialKohli"
@@ -184,15 +130,7 @@
             android:exported="false"
             android:theme="@style/APXI" />
         <activity
-            android:name=".PSXI"
-            android:exported="false"
-            android:theme="@style/PSXI" />
-        <activity
             android:name=".AryanSrivastava"
-            android:exported="false"
-            android:theme="@style/APXI" />
-        <activity
-            android:name=".APXI"
             android:exported="false"
             android:theme="@style/APXI" />
         <activity
@@ -227,10 +165,6 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity
-            android:name=".ResetPasswordActivity"
-            android:parentActivityName=".LoginActivity"
-            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
